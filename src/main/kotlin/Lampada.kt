@@ -30,7 +30,10 @@ class Lampada(val identificador: String) {
     }
 
     fun mostrarEstat() {
-        val estatLampada = if (estat) "encesa" else "apagada"
-        println("$identificador: Lampada $estatLampada - Color: $color - Intensitat: $intensitat")
+        val estatLampada = when (estat) {
+            true -> "encendida"
+            false -> "apagada"
+        }
+        println("$identificador: Lámpara $estatLampada - Color: $color - Intensidad: $intensitat")
     }
 }
