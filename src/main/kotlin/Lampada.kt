@@ -1,9 +1,9 @@
 package org.example
 
 class Lampada(val identificador: String) {
-    var estat: Boolean = false
-    var color: String = "blanc"
-    var intensitat: Int = 0
+    private var estat: Boolean = false
+    private var color: String = "blanc"
+    private var intensitat: Int = 0
 
     fun encendre() {
         estat = true
